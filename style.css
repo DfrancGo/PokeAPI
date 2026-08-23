@@ -10,20 +10,21 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background-color: #3960ab;
+    scrollbar-color: #3960ab;
 }
 
 .sidebar {
     width: 200px;
-    min-height: 100vh;
     background-color: #1a2e54;
+    height: 100vh;
     color: white;
     padding: 20px;
     position: fixed;
     left: 0;
     top: 0;
+    overflow-y: auto;
 }
 
 .sidebar h3 {
@@ -70,6 +71,7 @@ body {
 }
 
 main {
+    flex: 1;
     margin-left: 220px;
     display: flex;
     flex-direction: column;
@@ -114,6 +116,18 @@ h2 {
     color: #ffca02;
 }
 
+footer {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    padding: 15px;
+    color: #ffca02;
+}
+footer a {
+    text-decoration: none;
+    color: #ffca02;
+}
+
 
 @media (max-width: 768px) {
     body {
@@ -134,6 +148,12 @@ h2 {
         margin-left: 0;
         order: 1;
         min-height: 70vh;
+    }
+
+    footer {
+        order: 3;
+        justify-content: center;
+        align-self: center;
     }
 }
 
