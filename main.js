@@ -4,6 +4,7 @@ const botonRecarga = document.querySelector("#reload-btn");
 const botonGuardar = document.querySelector("#save-btn");
 const listaPokemon = document.querySelector("#pokemon-list");
 const main = document.querySelector("main");
+const contenedorNombre = document.querySelector("#name-container")
 
 //Array donde guardo los pokemones
 let misPokemones = [];
@@ -26,7 +27,7 @@ function cargarPokemon() {
             let titulo = main.querySelector("h2");
             if (!titulo) {
                 titulo = document.createElement("h2");
-                main.appendChild(titulo);
+                contenedorNombre.appendChild(titulo);
             }
             titulo.textContent = nombreActual;
         });
