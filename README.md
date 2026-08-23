@@ -15,6 +15,6 @@ En caso de vista escritorio es una barra lateral donde se almacena una lista con
 - Permite un máximo de seis (6) pokemones (Piensa bien cuáles elegir).
 
 ## Tecnologías usadas:
-HTML 5
-CSS 3
-JavaScript Vanilla
+- HTML 5
+- CSS 3
+- JavaScript Vanilla
